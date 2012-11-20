@@ -1,3 +1,4 @@
+package ru.timus.acm;
 
 public class Timus {
 
