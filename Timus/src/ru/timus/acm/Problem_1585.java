@@ -17,16 +17,16 @@ public class Problem_1585 {
 				System.in));
 		int count = Integer.parseInt(reader.readLine());
 		int e = 0, m = 0, l = 0;
-		int pinguins[] = new int[count];
+		char pinguins[] = new char[count];
 		for (int i = 0; i < count; i++) {
-			pinguins[i] = reader.readLine().length();
+			pinguins[i] = reader.readLine().charAt(0);
 		}
 		for (int pinguin : pinguins) {
 			switch (pinguin) {
-			case 15:
+			case 'E':
 				e++;
 				break;
-			case 16:
+			case 'M':
 				m++;
 				break;
 			default:
