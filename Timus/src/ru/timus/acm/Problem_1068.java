@@ -13,23 +13,20 @@ public class Problem_1068 {
 	 */
 	public static void main(String[] args) throws NumberFormatException,
 			IOException {
-		// TODO Auto-generated method stub
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(
 				System.in));
 
-		int n = Integer.parseInt(reader.readLine());
+		short n = Short.parseShort(reader.readLine());
 		int result = 0;
 
 		if (n < 1) {
 
-			for (int i = n; i <= 1; i++) {
-				result += i;
+			for (short i = n; i <= 1; i++) {
+				result=(n+1)*(2-(n))/2;
 			}
-		}else{
-			for(int i =1; i<=n; i++){
-				result+=i;
-			}
+		} else {
+			result = (1 + n) * n / 2;
 		}
 		System.out.println(result);
 	}
